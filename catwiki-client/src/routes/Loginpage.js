@@ -1,5 +1,11 @@
+import styled from "styled-components";
+
 const Loginpage = () => {
-  return <div>loginpage</div>;
+  return <Container></Container>;
 };
 
 export default Loginpage;
+
+const Container = styled.div`
+  height: 100%;
+`;

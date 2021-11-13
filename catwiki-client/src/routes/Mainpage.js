@@ -1,11 +1,17 @@
 import styled from "styled-components";
+import List from "../components/List";
 
 const Mainpage = () => {
   return (
     <Container>
       <MainCatImg></MainCatImg>
       <MainContent>
-        <Content></Content>
+        <Table>
+          <List />
+          <List data={{ num: "1", title: "고양이가 사료를 먹지 않아요" }} />
+          <List data={{ num: "2", title: "똥색이 이상해요" }} />
+          <List data={{ num: "3", title: "토를 자꾸 해요" }} />
+        </Table>
       </MainContent>
     </Container>
   );
@@ -32,8 +38,8 @@ const MainContent = styled.div`
   align-items: center;
   justify-content: center;
 `;
-const Content = styled.div`
-  width: 500px;
+const Table = styled.div`
+  width: 800px;
   height: 500px;
-  border: 1px solid black;
+  overflow: scroll;
 `;
